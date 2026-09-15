@@ -1,0 +1,52 @@
+.glass-form  {
+    background: rgba(8, 229, 218, 0.15) !important;
+
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+    border-radius: 20px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.bg {
+    
+    min-height: 100vh; 
+
+    background: linear-gradient(135deg, #66e8ea, #5628b9);
+}
+
+body{
+
+    font-family:'Times New Roman', Times, serif;
+}
+
+.fontPass{
+    font-size: x-small;
+}
+
+
+.password-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px; /* Lascia spazio a destra per non coprire il testo */
+  box-sizing: border-box;
+}
+
+.password-wrapper i {
+  position: absolute;
+  right: 19px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #666;
+}
+
+.liPass{
+    list-style: none;
+}
