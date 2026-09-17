@@ -41,49 +41,41 @@
     </nav>
 
 
-    <div class="container">
+<div class="container my-4">
         <div class="row justify-content-center">
-            <div class="col-4 mt-5" align="center">
 
-                
-                <form id="loginForm" class="glass-form p-4 rounded d-inline-block">
+            <div class="col-12 col-sm-10 col-md-8 col-lg-5">
 
-                    <div>
-                        <p class="fw-light fw-bold">ACCEDI</p>
+                <form id="loginForm" class="glass-form p-4 rounded w-100">
+
+                    <div class="text-start mt-3">
+                        <label class="form-label" for="email">Email</label>
+                        <input type="email" id="email" name="email" class="form-control" placeholder="example@gmail.com" required />
+                        <div id="messaggioErrore" class="text-danger small mt-1"></div>
                     </div>
 
-                    <hr class="my-2 border-2">
-
-                    <div class="mt-2">
-                        <label class="form-label" for="nome"> Email </label>
+                    <div class="text-start mt-3">
+                        <label class="form-label" for="password">Password</label>
+                        <div class="password-wrapper position-relative">
+                            <input type="password" id="password" name="password" class="form-control pe-5" placeholder="Password" required />
+                            <i class="fa-solid fa-eye position-absolute top-50 end-0 translate-middle-y me-3" id="toggleIcon" onclick="togglePassword()" style="cursor: pointer;"></i>
+                        </div>
+                        <div id="messaggioErroreLogin" class="text-danger small mt-1"></div>
                     </div>
+                    
 
-                    <div>
-                        <input type="text" id="email" name="email" class="form-control" placeholder="example@gmail.com" required />
+                    <div class="mt-4 text-center">
+                        <button class="btn btn-light w-100 fw-bold" type="submit">Accedi</button>
                     </div>
-
-                    <div class="mt-2">
-                        <label class="form-label" for="password"> Password </label>
-                    </div>
-
-                    <div class="password-wrapper">
-                        <input type="password" id="password" name="password" class="form-control" placeholder="Password" required />
-                        <i class="fa-solid fa-eye" id="toggleIcon" onclick="togglePassword()"></i>
-                    </div>
-
-                    <div class="mt-3">
-                        <button class="btn btn-light" type="submit">Login</button>
-                    </div>
-
-                    <div id="messErroreLogin" class="text-danger"></div>
 
                     <hr class="my-3 border-2">
 
-                     <div>
-                        <label class="form-label mt-2"><i>Non hai un account? </i><a class="text-dark" href="register.html">Registrati</a></label>
+                    <div class="text-center">
+                        <span class="small">Non hai un account? <a class="text-dark fw-bold" href="register.html">Registrati</a></span>
                     </div>
 
                 </form>
+
             </div>
         </div>
     </div>
